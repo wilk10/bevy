@@ -80,7 +80,7 @@ pub struct GltfAnimTarget {
 }
 
 /// As gltf_json::Property. Specifies a property to animate. Valid target properties are position, rotation, scale, or morph target weights.
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Eq, PartialEq)]
 pub enum GltfAnimTargetProperty {
     /// XYZ translation vector.
     Position,
